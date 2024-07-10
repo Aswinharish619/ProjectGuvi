@@ -13,6 +13,7 @@ public class WikipediaOrg {
 
 		WebDriver driver = new ChromeDriver();
 
+<<<<<<< HEAD
 		driver.get("https://www.google.com/");
 
 		driver.manage().window().maximize();
@@ -25,6 +26,17 @@ public class WikipediaOrg {
 
 		Thread.sleep(3000);
 		//driver.close();
+=======
+		driver.get("https://www.wikipedia.org/");
+
+		driver.manage().window().maximize();
+
+		driver.findElement(By.name("search")).sendKeys("Artificial intelligence");
+	
+
+		Thread.sleep(3000);
+		driver.close();
+>>>>>>> 22a938f1fda6b1c0f52aeb21fed4f9a53b59a7ba
 
 	}
 
