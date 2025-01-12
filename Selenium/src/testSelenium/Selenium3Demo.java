@@ -15,8 +15,6 @@ public class Selenium3Demo {
 
 		driver.get("https://www.google.com/");
 		
-		
-
 		driver.manage().window().maximize();  
 		
 		try {
