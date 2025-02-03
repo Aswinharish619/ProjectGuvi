@@ -29,10 +29,11 @@ public class DropDownHandeling {
 		System.out.println("Total Dropdwon values"+birthMonth.size());
 		birthMonth.get(11).click();
 		
+				
 		//2nd way
 		WebElement bm= driver.findElement(By.xpath("//select[@id='month']"));
 		
-		Select month= new Select(bm);
+		Select month= new Select(bm);	
 		
 		month.selectByIndex(10);
 		month.selectByVisibleText("Mar");

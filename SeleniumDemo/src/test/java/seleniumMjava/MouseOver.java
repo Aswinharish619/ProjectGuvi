@@ -14,21 +14,21 @@ public class MouseOver {
 		
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
-		driver.get("https://www.selenium.dev/");
+		driver.get("https://www.facebook.com/login/");
 		
 		driver.manage().window().maximize();
 		
 		//Create the web element reference 
-		WebElement downloads=driver.findElement(By.xpath("//*[contains(@href, '/downloads')]"));
+		WebElement Login=driver.findElement(By.id("loginbutton"));
 		
 		Actions act= new Actions(driver);
-		act.moveToElement(downloads).build().perform();
+		 act.contextClick(Login).perform();
 		
-		Thread.sleep(3000);
-		act.contextClick(downloads).build().perform();
+		Thread.sleep(2000);
+		act.contextClick(Login).build().perform();
 		
 		System.out.println("done");
-		
+		driver.close();
 		
 		
 

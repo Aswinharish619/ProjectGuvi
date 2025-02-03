@@ -17,17 +17,17 @@ public class DragDrop {
 		driver.manage().window().maximize();
 		driver.get("https://the-internet.herokuapp.com/drag_and_drop");
 		
-		//Create the web element reference 
-		WebElement boxA =driver.findElement(By.xpath("//div[@id='column-a']"));
+		
+		WebElement boxA =driver.findElement(By.id("column-a"));
 		WebElement boxB =driver.findElement(By.id("column-b"));
-		
+		Thread.sleep(1000);
 		Actions actions =new Actions(driver);
-		actions.moveToElement(boxA);
-		actions.clickAndHold();
-		actions.moveToElement(boxB);
+		actions.dragAndDrop(boxA, boxB);
+		actions.build().perform();
 		
-		actions.release().perform();
-		Thread.sleep(2000);
+		
+		
+		Thread.sleep(3000);
 		driver.close();
 		
 		
