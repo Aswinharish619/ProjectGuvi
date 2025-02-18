@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-16T02:21:41 GST" name="Default suite" finished-at="2025-02-16T02:21:50 GST" duration-ms="8689">
+    <groups>
+    </groups>
+    <test started-at="2025-02-16T02:21:41 GST" name="Default test" finished-at="2025-02-16T02:21:50 GST" duration-ms="8689">
+      <class name="testngtraning.FirstTestNGExample">
+        <test-method signature="openApplication()[pri:-3, instance:testngtraning.FirstTestNGExample@8519cb4]" started-at="2025-02-16T02:21:41 GST" name="openApplication" finished-at="2025-02-16T02:21:49 GST" duration-ms="8191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="LoginVerify()[pri:-2, instance:testngtraning.FirstTestNGExample@8519cb4]" started-at="2025-02-16T02:21:49 GST" name="LoginVerify" finished-at="2025-02-16T02:21:49 GST" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginVerify -->
+        <test-method signature="Logout()[pri:-1, instance:testngtraning.FirstTestNGExample@8519cb4]" started-at="2025-02-16T02:21:49 GST" name="Logout" finished-at="2025-02-16T02:21:50 GST" duration-ms="279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+      </class> <!-- testngtraning.FirstTestNGExample -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

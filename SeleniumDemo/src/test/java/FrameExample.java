@@ -13,6 +13,12 @@ public class FrameExample {
 		driver.get("https://the-internet.herokuapp.com/javascript_alerts");
 		
 		Thread.sleep(3000);
+		
+		driver.switchTo().window("New Window");
+		Thread.sleep(2000);
+		driver.close();
+		
+		
 
 	}
 
